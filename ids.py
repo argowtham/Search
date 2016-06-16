@@ -1,4 +1,4 @@
-from Search_Algorithms import search
+from Search import search
 
 
 class IDS(search.Search):

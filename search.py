@@ -1,4 +1,4 @@
-from Search_Algorithms import city
+from Search import city
 
 
 class Search:

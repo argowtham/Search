@@ -1,15 +1,15 @@
-from Search_Algorithms import city
-from Search_Algorithms import bfs
-from Search_Algorithms import dfs
-from Search_Algorithms import ids
+from Search import city
+from Search import bfs
+from Search import dfs
+from Search import ids
 
 
 if __name__ == "__main__":
     print("=========================================")
     print("             Search Algorithms")
     print("=========================================")
-    source = city.City(input("Enter the source city: "), '')
-    destination = input("Enter the destination city: ")
+    source = city.City(input("Enter the source city: ").capitalize(), '')
+    destination = input("Enter the destination city: ").capitalize()
     algorithm = input("Enter the algorithm with which search has to be done: ").upper()
     if algorithm == "BFS":
         finder = bfs.BFS(source, destination)
